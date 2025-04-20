@@ -7,4 +7,4 @@ Takes in a competition ID for a templeOSRS competition and will update every pla
 # GetCompetitionMembers
 Takes in a competition ID for a templeOSRS competition and will print to both the console and a file called Members.txt in the installed folder.
 
-![TempleOSRS-Auto-Updater](test.PNG)
+![Get Competition Members](GetCompetitionMembers.PNG)
