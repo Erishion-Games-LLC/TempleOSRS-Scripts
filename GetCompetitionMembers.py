@@ -23,12 +23,16 @@ def getCompetitionMembers(compID):
     
 def writePlayersToFile(members):
     for member in members:
-        currentMember = member
-        currentMember = currentMember.replace(" ", "_", -1)
+        currentMember = member.replace(" ", "_", -1)
 
         with open("Members.txt", mode="a") as f:
             f.writelines(currentMember) 
             f.write("\n")
+
+def writePlayersToConsole(members):
+    for member in members:
+        currentMember = member.replace(" ", "_", -1)
+        print(currentMember)
 
 def main():
     while True:
@@ -41,6 +45,8 @@ def main():
 
         members = getCompetitionMembers(compID)
         writePlayersToFile(members)
+        writePlayersToConsole(members)
+        
 
         
 
